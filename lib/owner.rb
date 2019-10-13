@@ -2,13 +2,26 @@ class Owner
   
   attr_reader :name 
   @@all = []
+<<<<<<< HEAD
   
+=======
+  @@count = []
+>>>>>>> 93e73a8f2be7ee810416936d200ccd6ef48b42bc
 
   def initialize(name)
     @name = name
     @@all << self
+<<<<<<< HEAD
   end
 
+=======
+    @@count << self
+  end
+  
+  def owner=(owner)
+    @owner = owner
+  end
+>>>>>>> 93e73a8f2be7ee810416936d200ccd6ef48b42bc
   
   def species
     @species = "human"
@@ -23,6 +36,7 @@ class Owner
   end
   
   def self.count
+<<<<<<< HEAD
   @@all.count
   end
   
@@ -69,3 +83,9 @@ end
 
 
 
+=======
+  self.count do |owners| owners == name
+    end
+  end
+end
+>>>>>>> 93e73a8f2be7ee810416936d200ccd6ef48b42bc
